@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JoJo's Bizarre Adventure - Unofficial Website</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://jojowiki.com/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- Google's Fonts -->
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <!-- "Noto Sans JP" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- "Permanent Marker" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- "Luckiest Guy" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- Custom style overrides -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Roboto, serif;
+        }
+
+        .bg-1 {
+            background-image: url("https://r4.wallpaperbetter.com/wallpaper/672/580/999/jojo-s-jojo-s-bizarre-adventure-jojo-s-bizarre-adventure-phantom-blood-jojo-s-bizarre-adventure-battle-tendency-jojo-s-bizarre-adventure-stardust-crusaders-hd-wallpaper-19d8d21401e822ad61506c74d3438078.jpg");
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed; /* For parallax scrolling effect */
+        }
+
+        .bg-2 {
+            background-image: url("https://wallpapercave.com/wp/wp2200985.jpg");
+        }
+
+        .bg-3 {
+            background-image: url("https://wallpapercave.com/wp/wp2201009.jpg");
+        }
+
+        .page-header {
+            min-height: 100vh;
+        }
+
+        .page-header-callout {
+            background-color: rgba(54, 35, 54, 0.60);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(54, 35, 54, 0) 90%);
+            text-shadow: 2px 2px 1px #000;
+        }
+
+        .page-header-callout h1 {
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        .navbar {
+            background-color: transparent;
+            padding: 1.25rem 0;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 3px #000;
+            transition: all 400ms ease-out;
+        }
+
+        .navbar.scrolled {
+            padding: 0.25rem;
+            text-shadow: none;
+        }
+
+        .page-section {
+        }
+
+        .page-section header {
+            font-weight: bold;
+            padding: 6rem 0 1rem 0;
+        }
+
+        /* Odd Sections */
+        .page-section:nth-child(odd) header {
+            background-color: #251925;
+            text-align: left;
+            position: relative;
+        }
+
+        /* Event Sections */
+        .page-section:nth-child(even) header {
+            background-color: #193919;
+            text-align: right;
+        }
+
+        .character-bio {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(54, 35, 54, 0) 50%);
+            text-shadow: 2px 2px 1px #000;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column vh-100">
+
+<!-- Navbar Header -->
+<header class="page-header bg-1 d-flex flex-column">
+    <nav id="navbar-main" class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                JoJo's Bizarre Adventure - <span><del>Un</del>official Website</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news-events">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#episodes-manga">Episodes & Manga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#characters">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#merchandise">Merchandise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Panel -->
+    <div class="flex-grow-1 d-flex flex-column-reverse">
+        <section class="page-header-callout p-4 pt-1 pb-5 text-center">
+            <h1 class="display-2 fw-bold text-white mb-4"
+                style="font-family: 'Permanent Marker',serif;">
+                JoJo's Bizarre Adventure
+            </h1>
+            <div class="col-lg-8 mb-5 mx-auto">
+                <div class="lead">
+                    <p>
+                        Welcome to the official website of <b>JoJo's Bizarre Adventure</b>, the iconic manga and anime
+                        series created by Hirohiko Araki. Dive into the extraordinary world of the Joestar family,
+                        spanning generations of supernatural battles, intricate plots, and unforgettable characters.
+                        Explore in-depth character profiles, episode guides, and exclusive behind-the-scenes content.
+                        Stay updated with the latest news, upcoming releases, and special events. Join our vibrant
+                        community of fans and celebrate the unique and ever-evolving legacy of JoJo's Bizarre Adventure.
+                    </p>
+                    <p class="m-0">Embrace the adventure—
+                        <span class="display-6" style="font-family: 'Noto Sans JP',serif;">オラ!</span>
+                        <span class="display-5" style="font-family: 'Noto Sans JP',serif;">オラ!</span>
+                        <span class="display-4" style="font-family: 'Noto Sans JP',serif;">オラ!</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
+
+<main class="flex-grow-1 d-flex flex-column" data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="0"
+      tabindex="0">
+    <!-- News & Events -->
+    <section id="news-events" class="page-section">
+        <header>
+            <div class="container">
+                <h1 style="font-family: 'Luckiest Guy',serif;">
+                    <i class="fa-regular fa-newspaper"></i> News & Events
+                </h1>
+            </div>
+        </header>
+        <div class="container p-3 d-flex flex-column">
+            <!-- First page news & events -->
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+                <div class="col">
+                    <article class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Araki Forgot: Celebrating the Quirky Moments in
+                                        JoJo’s
+                                        Bizarre Adventure</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Posted on June 22,
+                                        2024</h6>
+                                    <p class="card-text">Join us on July 25, 2024, for a special online event
+                                        celebrating the quirky "Araki Forgot" moments in JoJo's Bizarre Adventure!
+                                        Explore the charming inconsistencies and fan-favorite forgetful moments that add
+                                        to the series' unique charm. Share your discoveries and revel in the
+                                        unpredictable creativity of Hirohiko Araki.</p>
+                                    <a href="#" class="card-link">Read more &rarr;</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <figure class="figure">
+                                    <img src="https://pbs.twimg.com/media/GPbUSGaacAAi2Ub?format=jpg&name=4096x4096"
+                                         class="figure-img img-fluid" alt="Araki never forgets"/>
+                                    <figcaption class="figure-caption">Hirohiko Araki holding his artwork.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://img1.ak.crunchyroll.com/i/spire4/204de5ea79fc115c14092313e67714631665148495_main.jpg"
+                                     class="img-fluid" alt="stone ocean's cover poster"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">JoJo's Bizarre Adventure: Stone Ocean Part 2
+                                        Release Date
+                                        Announced!</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Posted on June 14,
+                                        2024</h6>
+                                    <p class="card-text">Exciting news for JoJo fans! The highly anticipated
+                                        second part of
+                                        "Stone Ocean" is set
+                                        to premiere on September 1, 2024. Join Jolyne Cujoh on her continued
+                                        journey through
+                                        the
+                                        perilous Green Dolphin Street Prison. Stay tuned for more updates
+                                        and exclusive
+                                        previews!</p>
+                                    <a href="#" class="card-link">Read more &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://i.pinimg.com/originals/fb/16/5c/fb165cb83a5ed1e815ac5f91d596340f.png"
+                                     class="img-fluid" alt="Jotaro's statue"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Exclusive JoJo Art Exhibition Coming to New York
+                                        City</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Posted on June 7,
+                                        2024</h6>
+                                    <p class="card-text">
+                                        Experience the world of JoJo like never before! An exclusive art
+                                        exhibition
+                                        featuring
+                                        original artwork by Hirohiko Araki will be held in New York City
+                                        from August 15 to
+                                        September 15, 2024. Don’t miss this chance to see rare sketches,
+                                        iconic scenes, and
+                                        immersive installations. Tickets go on sale July 1st.
+                                    </p>
+                                    <a href="#" class="card-link">Read more &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid"
+                                         src="https://jojo-news.com/wp-content/uploads/2021/12/JOJOMagazine2022-1070x1536.jpg"
+                                         alt="stone ocean's magazine cover"
+                                    />
+                                    <figcaption class="figure-caption">Magazine cover for 35th anniversary.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">JoJo’s Bizarre Adventure Celebrates 35th
+                                        Anniversary</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Posted on May 25,
+                                        2024</h6>
+                                    <p class="card-text">
+                                        Join us in celebrating 35 years of JoJo’s Bizarre Adventure! To
+                                        commemorate this
+                                        milestone, we’re hosting a special online event on July 10, 2024,
+                                        with live
+                                        discussions,
+                                        fan art contests, and surprise guest appearances. Participate in the
+                                        festivities
+                                        and
+                                        relive the most bizarre moments in JoJo history.
+                                    </p>
+                                    <a href="#" class="card-link">Read more &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="#" class="btn btn-outline-secondary">Read more articles &darr;</a>
+            </div>
+        </div>
+    </section>
+    <!-- Episodes & Manga -->
+    <section id="episodes-manga" class="page-section">
+        <header>
+            <div class="container">
+                <h1 style="font-family: 'Luckiest Guy',serif;">
+                    <i class="fa-solid fa-book"></i> Episodes & Manga
+                </h1>
+            </div>
+        </header>
+        <div class="container p-3">
+            <!-- Anime Episodes -->
+            <div class="card border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Episodes</h5>
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-6">
+                            <p>Immerse yourself in the thrilling adventures of the Joestar family with our comprehensive
+                                episode guide. From the early days of Jonathan Joestar's battle against Dio Brando to
+                                the
+                                modern-day escapades of Jotaro Kujo and his descendants, each episode is packed with
+                                intense
+                                action, unique Stands, and intricate storytelling. Catch up on your favorite arcs or
+                                start
+                                from
+                                the beginning to experience the full saga of JoJo's Bizarre Adventure.
+                            </p>
+                            <a href="#" class="card-link">See more &rarr;</a>
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid img-thumbnail rounded-0"
+                                 src="https://www.cafemaisgeek.com/wp-content/uploads/2020/04/JoJo-Phantom-Blood-Poster.jpg"/>
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid img-thumbnail rounded-0"
+                                 src="https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg"/>
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid img-thumbnail rounded-0"
+                                 src="https://i.pinimg.com/originals/ef/ec/1e/efec1e8ea7001dca7cbe1d04ec4be882.jpg"/>
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid img-thumbnail rounded-0"
+                                 src="https://i.ebayimg.com/images/g/OfgAAOSwFRpf7B6L/s-l1600.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mangas -->
+            <div class="card border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Manga</h5>
+                    <p class="card-text">
+                        Discover the original manga that started it all! Created by Hirohiko Araki, JoJo's Bizarre
+                        Adventure is a groundbreaking series that has captivated readers since its debut in 1987.
+                        Explore detailed summaries and volumes of each part, from Phantom Blood to the latest chapters.
+                        Whether you're a long-time fan or new to the series, our manga section offers everything you
+                        need to dive deep into the bizarre and imaginative world of JoJo.
+                    </p>
+                    <a href="#" class="card-link">See more &rarr;</a>
+                </div>
+                <div class="card-body">
+                    <div class="row row-cols-md-3 row-cols-lg-6 g-4">
+                        <!-- Volume 1 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 1</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/0/0e/latest/20230510204229/Volume_1.png"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Aug 10, 1987</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 2-->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 2</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/5/53/latest/20240303005939/Volume_2.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Jan 8, 1988</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 3 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 3</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/d/d4/latest/20220701223414/Volume_3.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Apr 8, 1988</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 4 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 4</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/e/e0/latest/20191015215852/Volume_4.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Jun 10, 1988</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 5 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 5</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/1/15/latest/20240313005515/Volume_5.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Aug 10, 1988</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 6 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 6</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/5/54/latest/20191015214417/Volume_6.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Oct 7, 1988</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 7 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 7</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/f/f8/latest/20191015214654/Volume_7.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Dec 6, 1988</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 8 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 8</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/c/c1/latest/20191015215450/Volume_8.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Feb 10, 1989</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 9 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 9</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/5/55/latest/20191015220203/Volume_9.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Apr 10, 1989</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 10 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 10</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/8/8b/latest/20191015215519/Volume_10.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Jun 9, 1989</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 11 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 11</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/3/34/latest/20191015213237/Volume_11.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Aug 10, 1989</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Volume 12 -->
+                        <div class="col">
+                            <div class="card text-center rounded-0">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Volume 12</small>
+                                    </p>
+                                </div>
+                                <img class="card-img-top rounded-0"
+                                     src="https://static.jojowiki.com/images/a/a9/latest/20191015214651/Volume_12.jpg"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Oct 9, 1989</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Characters -->
+    <section id="characters" class="page-section">
+        <header>
+            <div class="container">
+                <h1 style="font-family: 'Luckiest Guy',serif;">
+                    <i class="fa-solid fa-person"></i> Characters
+                </h1>
+            </div>
+        </header>
+        <div class="container p-3">
+            <div class="card-group">
+                <!-- Jonathan Joestar -->
+                <div class="card text-bg-dark rounded-0 border-0">
+                    <div class="d-flex gap-1"
+                         style="position: absolute; left: 0.75rem; top: 0.75rem; z-index: 5;">
+                        Seasons:
+                        <span class="d-flex align-items-center badge text-bg-primary rounded-0">1</span>
+                    </div>
+                    <img class="card-img rounded-0"
+                         src="https://static.wikia.nocookie.net/jjba/images/3/3f/JonathanP2.png"/>
+                    <div class="character-bio card-img-overlay d-flex flex-column justify-content-end rounded-0">
+                        <h5 class="card-title">Jonathan Joestar</h5>
+                        <p class="card-text overflow-y-auto">The noble and honorable Jonathan Joestar is the
+                            protagonist
+                            of "Phantom Blood." As the first JoJo, Jonathan's unwavering sense of
+                            justice and dedication set the foundation for the Joestar legacy. He
+                            battles
+                            his adoptive brother, Dio Brando, to protect his family and loved ones,
+                            showcasing immense courage and the power of Hamon.</p>
+                    </div>
+                </div>
+                <!-- Joseph Joestar -->
+                <div class="card text-bg-dark rounded-0 border-0">
+                    <div class="d-flex gap-1"
+                         style="position: absolute; left: 0.75rem; top: 0.75rem; z-index: 5;">
+                        <span class="d-flex align-items-center badge text-bg-info rounded-0">2</span>
+                        <span class="d-flex align-items-center badge text-bg-secondary rounded-0">3</span>
+                        <span class="d-flex align-items-center badge text-bg-light rounded-0">4</span>
+                    </div>
+                    <img class="card-img rounded-0"
+                         src="https://i.pinimg.com/originals/ac/80/ef/ac80ef78a881f5c6d66cbd571d2e686c.jpg"/>
+                    <div class="character-bio card-img-overlay d-flex flex-column justify-content-end rounded-0">
+                        <h5 class="card-title">Joseph Joestar</h5>
+                        <p class="card-text overflow-y-auto">The cunning and quick-witted Joseph Joestar
+                            stars in
+                            "Battle Tendency." Known for his resourcefulness and humor, Joseph uses
+                            his sharp mind and Hamon abilities to fight against the ancient Pillar
+                            Men. His charisma and unconventional tactics make him a beloved and
+                            unforgettable character.</p>
+                    </div>
+                </div>
+                <!-- Jotaro Kujo -->
+                <div class="card text-bg-dark rounded-0 border-0">
+                    <div class="d-flex gap-1"
+                         style="position: absolute; left: 0.75rem; top: 0.75rem; z-index: 5;">
+                        <span class="d-flex align-items-center badge text-bg-secondary rounded-0">3</span>
+                        <span class="d-flex align-items-center badge text-bg-light rounded-0">4</span>
+                        <span class="d-flex align-items-center badge text-bg-warning rounded-0">5</span>
+                        <span class="d-flex align-items-center badge text-bg-success rounded-0">6</span>
+                    </div>
+                    <img class="card-img rounded-0"
+                         src="https://i.pinimg.com/originals/23/8d/62/238d62008384bae9292927df3fd67a94.jpg"/>
+                    <div class="character-bio card-img-overlay d-flex flex-column justify-content-end rounded-0">
+                        <h5 class="card-title">Jotaro Kujo</h5>
+                        <p class="card-text overflow-y-auto">Jotaro Kujo, the stoic and powerful protagonist
+                            of
+                            "Stardust Crusaders," is known for his catchphrase "Yare Yare Daze" and
+                            his Stand, Star Platinum. Jotaro embarks on a worldwide journey to
+                            defeat Dio Brando once and for all, demonstrating immense strength,
+                            determination, and a deep sense of duty to his family.</p>
+                    </div>
+                </div>
+                <!-- Josuke Higashikata -->
+                <div class="card text-bg-dark rounded-0 border-0">
+                    <div class="d-flex gap-1"
+                         style="position: absolute; left: 0.75rem; top: 0.75rem; z-index: 5;">
+                        <span class="d-flex align-items-center badge text-bg-light rounded-0">4</span>
+                    </div>
+                    <img class="card-img rounded-0"
+                         src="https://static.wikia.nocookie.net/jjba/images/2/24/JosukeAnime.PNG"/>
+                    <div class="character-bio card-img-overlay d-flex flex-column justify-content-end rounded-0">
+                        <h5 class="card-title">Josuke Higashikata</h5>
+                        <p class="card-text overflow-y-auto">The kind-hearted yet fierce Josuke Higashikata
+                            leads
+                            "Diamond is Unbreakable." With his Stand, Crazy Diamond, Josuke can heal
+                            and repair objects and people, making him a compassionate protector of
+                            his hometown, Morioh. His love for his friends and quirky personality
+                            shine throughout his story.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <!-- Giorno Giovanna -->
+                <div class="card text-bg-dark rounded-0 border-0">
+                    <div class="d-flex gap-1"
+                         style="position: absolute; left: 0.75rem; top: 0.75rem; z-index: 5;">
+                        <span class="d-flex align-items-center badge text-bg-warning rounded-0">5</span>
+                    </div>
+                    <img class="card-img rounded-0"
+                         src="https://static.wikia.nocookie.net/jjba/images/1/19/Giorno_Giovanna_Anime.png"/>
+                    <div class="character-bio card-img-overlay d-flex flex-column justify-content-end rounded-0">
+                        <h5 class="card-title">Giorno Giovanna</h5>
+                        <p class="card-text overflow-y-auto">In "Golden Wind," Giorno Giovanna, the
+                            ambitious son of Dio, dreams of becoming a "Gang-Star" to reform the mafia from
+                            within. His Stand, Gold Experience, has life-giving abilities that reflect his
+                            desire to bring positive change. Giorno's determination and sense of justice
+                            drive him to challenge the corrupt forces in Italy.</p>
+                    </div>
+                </div>
+                <!-- Jolyne Cujoh -->
+                <div class="card text-bg-dark rounded-0 border-0">
+                    <div class="d-flex gap-1"
+                         style="position: absolute; left: 0.75rem; top: 0.75rem; z-index: 5;">
+                        <span class="d-flex align-items-center badge text-bg-success rounded-0">6</span>
+                    </div>
+                    <img class="card-img rounded-0"
+                         src="https://static.wikia.nocookie.net/jjba/images/a/ae/JolyneAnimeSitting.jpg"/>
+                    <div class="character-bio card-img-overlay d-flex flex-column justify-content-end rounded-0">
+                        <h5 class="card-title">Jolyne Cujoh</h5>
+                        <p class="card-text overflow-y-auto">Jolyne Cujoh, the first female JoJo, stars in
+                            "Stone Ocean." As the daughter of Jotaro Kujo, she inherits his strength and
+                            resolve. Wrongfully imprisoned, Jolyne must clear her name and uncover a
+                            sinister plot within the prison walls. Her Stand, Stone Free, gives her the
+                            power to unravel her body into strings, showcasing her adaptability and
+                            tenacity.</p>
+                    </div>
+                </div>
+                <!-- Johnny Joestar -->
+                <div class="card text-bg-dark rounded-0 border-0">
+                    <div class="d-flex gap-1"
+                         style="position: absolute; left: 0.75rem; top: 0.75rem; z-index: 5;">
+                        <span class="d-flex align-items-center badge text-bg-dark rounded-0">7</span>
+                    </div>
+                    <img class="card-img rounded-0"
+                         src="https://static.wikia.nocookie.net/jjba/images/d/d9/Johnny_Joestar_Part_7.jpg"/>
+                    <div class="character-bio card-img-overlay d-flex flex-column justify-content-end rounded-0">
+                        <h5 class="card-title">Johnny Joestar</h5>
+                        <p class="card-text overflow-y-auto">The protagonist of "Steel Ball Run," Johnny
+                            Joestar, is a former jockey seeking redemption and a new purpose in life.
+                            Paraplegic and determined, Johnny embarks on a cross-country race with his
+                            Stand, Tusk, which evolves through four powerful acts. His journey is one of
+                            self-discovery, healing, and relentless pursuit of his goals.</p>
+                    </div>
+                </div>
+                <!-- Josuke Higashikata (Part 8) -->
+                <div class="card text-bg-dark rounded-0 border-0">
+                    <div class="d-flex gap-1"
+                         style="position: absolute; left: 0.75rem; top: 0.75rem; z-index: 5;">
+                        <span class="d-flex align-items-center badge text-bg-light rounded-0">8</span>
+                    </div>
+                    <img class="card-img rounded-0"
+                         src="https://static.wikia.nocookie.net/jjba/images/3/3a/Josuke_JJL_Infobox_Manga.png"/>
+                    <div class="character-bio card-img-overlay d-flex flex-column justify-content-end rounded-0">
+                        <h5 class="card-title">Josuke Higashikata (Part 8)</h5>
+                        <p class="card-text overflow-y-auto">In "JoJolion," the second Josuke Higashikata is
+                            an amnesiac young man with a mysterious past. With his Stand, Soft & Wet, he can
+                            steal aspects of objects and living beings. Josuke's quest to uncover his
+                            identity and the secrets of Morioh Town is filled with intrigue, complexity, and
+                            personal growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Merchandise -->
+    <section id="merchandise" class="page-section">
+        <header>
+            <div class="container">
+                <h1 style="font-family: 'Luckiest Guy',serif;">
+                    <i class="fa-solid fa-cart-shopping"></i> Merchandise
+                </h1>
+            </div>
+        </header>
+        <div class="container p-3">
+            <div class="card border-0">
+                <div class="card-body">
+                    <p class="card-text">Welcome to the official JoJo's Bizarre Adventure Merchandise Store, your
+                        one-stop shop for all things JoJo! Show off your fandom with our wide range of exclusive
+                        products inspired by Hirohiko Araki's iconic series. Whether you're a long-time fan or new to
+                        the Joestar legacy, you'll find something to love in our diverse selection.</p>
+                    <h5 class="card-title">Apparel</h5>
+                    <p class="card-text">Wear your JoJo pride with our stylish clothing collection. From t-shirts and
+                        hoodies to jackets and hats, our apparel features your favorite characters, Stands, and iconic
+                        catchphrases. Perfect for everyday wear or special occasions, our high-quality clothing lets you
+                        express your JoJo style.</p>
+                    <div class="mb-3 w-100 shadow"
+                         style="height: 360px; background-image: url('https://jjbastore.com/wp-content/uploads/2021/04/jjba-store-banner.jpg'); background-size: cover; background-position: center;"
+                    ></div>
+                    <h5 class="card-title">Accessories</h5>
+                    <p class="card-text">Complete your look with our unique accessories. Explore our collection of bags,
+                        wallets, keychains, and jewelry, all adorned with JoJo's distinctive designs. These items make
+                        great gifts for fellow fans or a special treat for yourself.</p>
+                    <h5 class="card-title">Collectibles</h5>
+                    <p class="card-text">Add to your collection with our exclusive JoJo's Bizarre Adventure figures,
+                        statues, and plushies. Each piece is meticulously crafted to capture the essence of your
+                        favorite characters and Stands. Display them proudly on your shelf and relive your favorite
+                        moments from the series.</p>
+                    <h5 class="card-title">Home & Office</h5>
+                    <p class="card-text">Bring the world of JoJo into your home and office with our range of decor and
+                        stationery. From posters and wall art to notebooks and pens, these items add a touch of JoJo
+                        flair to any space. Brighten up your environment with the bold and bizarre aesthetics of the
+                        series.</p>
+                    <h5 class="card-title">Media</h5>
+                    <p class="card-text">Expand your JoJo library with our selection of manga, DVDs, and Blu-rays.
+                        Relive the adventures of the Joestar family from the very beginning or catch up on the latest
+                        releases. Our media collection is perfect for both new fans and long-time enthusiasts.</p>
+                    <h5 class="card-title">Limited Edition</h5>
+                    <p class="card-text">Don't miss out on our limited edition items! These exclusive products are
+                        available for a short time only and feature special designs and packaging. Be sure to check back
+                        often for new releases and grab them before they're gone.</p>
+                    <p class="card-text">Join our vibrant community of JoJo fans and celebrate the unique and
+                        ever-evolving legacy of JoJo's Bizarre Adventure. Shop now and bring a piece of this
+                        extraordinary world into your own!</p>
+                    <a href="#">Browse shop &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Merchandise -->
+    <section id="community" class="page-section">
+        <header>
+            <div class="container">
+                <h1 style="font-family: 'Luckiest Guy',serif;">
+                    <i class="fa-solid fa-cart-shopping"></i> Community
+                </h1>
+            </div>
+        </header>
+        <div class="container p-3">
+            <div class="card border-0">
+                <div class="card-body">
+                    <p class="card-text">Welcome to the JoJo's Bizarre Adventure Community! This is the ultimate
+                        gathering place for fans of Hirohiko Araki's iconic series. Here, you can connect with fellow
+                        JoJo enthusiasts from around the world, share your passion, and immerse yourself in the vibrant
+                        and dynamic fandom that makes JoJo's Bizarre Adventure so special.</p>
+                    <h5 class="card-title">Forums</h5>
+                    <p class="card-text">Join lively discussions in our forums, where you can talk about everything from
+                        your favorite arcs and characters to the latest news and theories. Whether you're a seasoned fan
+                        or new to the series, our forums are the perfect place to engage in meaningful conversations and
+                        make new friends.</p>
+                    <h5 class="card-title">Fan Art</h5>
+                    <p class="card-text">Showcase your artistic talents and admire the creativity of others in our Fan
+                        Art section. Share your drawings, paintings, and digital art inspired by the JoJo universe, and
+                        get feedback from a supportive community. Participate in regular art contests and challenges to
+                        hone your skills and gain recognition.</p>
+                    <h5 class="card-title">Cosplay</h5>
+                    <p class="card-text">Dive into the world of JoJo cosplay! Share your cosplay photos, get tips and
+                        advice on costume creation, and collaborate with other cosplayers. Whether you're a beginner or
+                        a pro, our community is here to support and celebrate your efforts. Join cosplay events and
+                        competitions to showcase your work and win exciting prizes.</p>
+                    <div class="mb-3 w-100 shadow"
+                         style="height: 360px; background-image: url('https://i.pinimg.com/originals/17/e2/4f/17e24f9a9110f0611460800d2863bd97.jpg'); background-size: cover; background-position: center;"
+                    ></div>
+                    <h5 class="card-title">Fan Fiction</h5>
+                    <p class="card-text">Unleash your creativity with JoJo fan fiction. Write and share your own
+                        stories, explore alternative universes, and expand on your favorite characters and arcs. Read
+                        and comment on the works of other fans, and participate in writing contests to challenge your
+                        imagination and storytelling skills.</p>
+                    <h5 class="card-title">Events</h5>
+                    <p class="card-text">Stay up-to-date with the latest JoJo events, both online and offline. From
+                        conventions and meetups to special screenings and live concerts, our Events section keeps you
+                        informed about all the exciting happenings in the JoJo community. Join events to connect with
+                        other fans and celebrate the series together.</p>
+                    <h5 class="card-title">Social Media</h5>
+                    <p class="card-text">Follow us on social media for real-time updates, exclusive content, and fan
+                        interactions. Join our vibrant online community on platforms like Facebook, Twitter, Instagram,
+                        and YouTube. Share your thoughts, participate in polls, and be part of the ongoing conversation
+                        about all things JoJo.</h5>
+                    <p class="card-text">Your voice matters! If you have any suggestions, feedback, or need assistance,
+                        our support team is here to help. We are committed to creating a positive and inclusive
+                        environment for all JoJo fans. Feel free to reach out and let us know how we can improve your
+                        experience.</p>
+                    <p class="card-text">Join the JoJo's Bizarre Adventure Community today and be part of the
+                        ever-growing Joestar legacy. Together, we'll continue to celebrate the unique and extraordinary
+                        world of JoJo's Bizarre Adventure!</p>
+                    <a href="#">Join our community 今、さっさと行け! &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="page-section">
+        <header>
+            <div class="container">
+                <h1 style="font-family: 'Luckiest Guy',serif;">
+                    <i class="fa-solid fa-envelope"></i> Contact Us
+                </h1>
+            </div>
+        </header>
+        <div class="container p-3">
+            <div class="row g-4">
+                <div class="col-sm-12 col-lg-6">
+                    <p>
+                        We'd love to hear from you! Whether you have questions, feedback, or just want to share your
+                        love for
+                        JoJo's Bizarre Adventure, please reach out to us using the form below. We'll get back to you as
+                        soon as
+                        possible.
+                    </p>
+                    <img class="img-fluid d-none d-lg-block p-4 ps-0"
+                         src="https://kokosbizarreadventure.netlify.app/images/jojo_logo.png"/>
+                </div>
+                <div class="col">
+                    <form class="p-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control rounded-0" id="name" placeholder="Your name"
+                                   required/>
+                            <label for="name" class="form-label">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-0" id="email"
+                                   placeholder="Your email address"
+                                   required/>
+                            <label for="email" class="form-label">Email</label>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control rounded-0" id="subject" placeholder="Email subject"
+                                   required/>
+                            <label for="subject" class="form-label">Subject</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                    <textarea style="min-height: 150px;" class="form-control rounded-0" name="message" id="message"
+                              placeholder="Write your message here..." required></textarea>
+                            <label for="message" class="form-label">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-0">Submit &raquo;</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="mt-3 py-5 border-top">
+    <div class="container">
+        <div class="d-flex flex-column flex-sm-row justify-content-between pb-5">
+            <p>&copy; 2024 Hirohiko Araki & Shueisha. All Rights <span class="text-danger">NOT</span> Reserved.</p>
+            <ul class="list-unstyled d-flex" style="font-size: 24px;">
+                <li class="ms-3"><a class="link-body-emphasis" href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a></li>
+            </ul>
+        </div>
+        <p class="display-6 fw-bold text-secondary text-center mt-5"
+           style="font-family: 'Noto Sans JP',serif;">
+            ジョジョの奇妙な冒険
+        </p>
+    </div>
+</footer>
+
+<!-- JS Scripts: -->
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Custom JS -->
+<script>
+    $(function () {
+        // Toggle class on navbar when scrolling down
+        $(document).scroll(function () {
+            var $nav = $(".fixed-top");
+            $nav.toggleClass(['scrolled', 'bg-dark'], $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+</body>
+</html>
